@@ -1,0 +1,138 @@
+/* styles.css */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5, #36d1dc); /* Degradado de colores llamativos */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro con opacidad */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffffff; /* Color llamativo para el título */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #686d4f; /* Efecto hover de color dorado */
+    transform: scale(1.05); /* Efecto de ampliación */
+}
+
+/* Contenedor de la imagen principal */
+.image-container {
+    margin-top: 150px; /* Espaciado para evitar que el header tape el contenido */
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    max-width: 90%;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #ffffff; /* Borde dorado que combina con el header */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Amplía ligeramente la imagen */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-container h2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #ffffff; /* Título en color dorado */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro con opacidad */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    color: #ffffff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffcc00; /* Color llamativo para los enlaces */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff; /* Cambio de color en el hover para los enlaces */
+    transform: scale(1.05); /* Efecto de ampliación */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .image-container {
+        padding: 20px;
+    }
+
+    .image-container img {
+        max-width: 300px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+

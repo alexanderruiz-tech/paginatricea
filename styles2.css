@@ -1,0 +1,77 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    margin-bottom: 40px; /* Separación entre cabecera y galería */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto 40px; /* Separación con el pie de página */
+}
+
+.gallery img {
+    width: 300px; /* Todas las imágenes del mismo ancho */
+    height: 200px; /* Todas las imágenes del mismo alto */
+    object-fit: cover; /* Recorta la imagen para ajustarse al contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de página */
+footer {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    margin-top: 40px; /* Mayor separación con la galería */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
